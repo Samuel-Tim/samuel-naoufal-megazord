@@ -1,2 +1,13 @@
 @import url("discographie.css");
 @import url("acceuil.css");
+
+:root{
+    --bg:'red''#ff2b2b';
+    --text:'black''#000000';
+    --primary:'blue''#1887b4';
+    --primary-alt:'navy blue''#063970';
+    --secondary:'purple''#c200b8';
+    --secondary-alt:'pink''#ff6ef8';
+    --title:'Lexend Mega';
+    --regular:'Source Code Pro';
+}
