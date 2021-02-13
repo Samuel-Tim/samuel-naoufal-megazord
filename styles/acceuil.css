@@ -4,15 +4,26 @@
     height:100%;
 }
 
-.a .grp_music{
-    object-fit: fill;
+.a .grp_music1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
     object-position: 50% 0%;
 }
+.a .grp_music2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
 
 @media (orientation: landscape) {
     .a .heros{
         height: 56.25%;
-        width: auto;
         margin: 0%;
     }
 }
