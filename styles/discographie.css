@@ -1,26 +1,34 @@
-.grp_music{
+.d .grp_music{
     position:absolute;
     width:100%;
     height:100%;
 }
 
-picture{
+.d picture{
     position:absolute;
     width:100%;
     height:100%;
 }
 
-.container{
+.d .container{
     height:100%;
 }
 
-.row{
+.d .row{
     height:100%;
 }
 
 
-@media (orientation: landscape min-width:1920px) {
-    .heros{
+
+
+
+
+
+
+
+
+@media (orientation: landscape ) {
+   .d .grp_music{
         height: 56.25%;
         width: auto;
         margin: 0;
