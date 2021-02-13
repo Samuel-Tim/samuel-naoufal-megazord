@@ -4,6 +4,11 @@
     height:100%;
 }
 
+.a .grp_music{
+    object-fit: fill;
+    object-position: 50% 0%;
+}
+
 @media (orientation: landscape) {
     .a .heros{
         height: 56.25%;
