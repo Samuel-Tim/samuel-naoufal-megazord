@@ -10,6 +10,14 @@ picture{
     height:100%;
 }
 
+.container{
+    height:100%;
+}
+
+.row{
+    height:100%;
+}
+
 
 @media (orientation: landscape min-width:1920px) {
     .heros{
