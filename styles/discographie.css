@@ -9,8 +9,8 @@
 
 @media screen and (orientation: landscape) {
     .heros{
-        height: auto;
-        width: 56.25%;
+        height: 56.25%;
+        width: auto;
         margin: 0;
     }
     }
