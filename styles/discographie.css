@@ -3,3 +3,14 @@
     width:100%;
     height:100%;
 }
+
+
+
+
+@media screen and (orientation: landscape) {
+    .heros{
+        height: auto;
+        width: 56.25%;
+        margin: 0;
+    }
+    }
