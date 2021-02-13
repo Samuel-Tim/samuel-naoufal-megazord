@@ -7,10 +7,10 @@
 
 
 
-@media (orientation: landscape) {
+@media (orientation: landscape min-width:1920px) {
     .heros{
         height: 56.25%;
         width: auto;
         margin: 0;
     }
-    }
+}
