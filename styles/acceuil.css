@@ -20,9 +20,6 @@
     opacity: 50%;
 }
 
-.a .container{
-    position: absolute;
-}
 
 .a .txt{
     position: relative;
@@ -35,7 +32,7 @@
 .a .btn {
     position: absolute;
     top: 50%;
-    left: 55%;
+    left: 35%;
     display: block;
     width: 30%;
     border: none;
