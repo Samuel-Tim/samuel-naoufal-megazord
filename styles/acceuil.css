@@ -20,19 +20,26 @@
     opacity: 50%;
 }
 
+.a .container{
+    height: 100%;
+}
+
+.a .row{
+    height: 100%;
+}
 
 .a .txt{
     position: relative;
     color: black;
     font-weight: bold;
     font-family: 'Source Code Pro';
-    top: 50%;
+    left: 95%;
 }
 
 .a .btn {
     position: absolute;
-    top: 50%;
-    left: 35%;
+    top: 65%;
+    left: 34%;
     display: block;
     width: 30%;
     border: none;
