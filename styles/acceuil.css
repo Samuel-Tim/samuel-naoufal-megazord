@@ -20,6 +20,13 @@
     opacity: 50%;
 }
 
+.a .container{
+    position: absolute;
+}
+
+.a p{
+    font-family:;
+}
 
 @media (orientation: landscape) {
     .a .heros{
