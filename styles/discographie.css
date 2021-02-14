@@ -36,13 +36,12 @@
 
 .d .row{
     position:absolute;
-    top:20%;
 }
 
 
 .d .text{
     position:relative;
-    top:0%;
+    top:20%;
     left:81%;
     color: black;
     font-weight: bold;
@@ -53,7 +52,7 @@
 .d .btn {
     position:absolute;
     left:110%;
-    bottom:25%;
+    top:90%;
     width: 30%;
     border: none;
     background: linear-gradient(to left, red, blue);
