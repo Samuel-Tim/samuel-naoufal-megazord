@@ -40,6 +40,15 @@
 }
 
 
+.d .text{
+    position:relative;
+    bottom:30%;
+    left:81%;
+    color: black;
+    font-weight: bold;
+    font-family: 'Source Code Pro';
+}
+
 
 @media (orientation: landscape ) {
    .d .hero{
