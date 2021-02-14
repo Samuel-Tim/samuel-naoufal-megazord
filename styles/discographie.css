@@ -35,7 +35,8 @@
 
 
 .d .row{
-    top:50%;
+    position:absolute;
+    top:20%;
 }
 
 
