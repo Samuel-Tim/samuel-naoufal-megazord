@@ -24,9 +24,30 @@
     position: absolute;
 }
 
-.a p{
-    font-family:;
+.a .txt{
+    position: relative;
+    color: black;
+    font-weight: bold;
+    font-family: 'Source Code Pro';
+    top: 50%;
 }
+
+.a .btn {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    display: block;
+    width: 30%;
+    border: none;
+    background:#1887b4;
+    padding: 14px 28px; 
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-family: 'Source Code Pro';
+  }
 
 @media (orientation: landscape) {
     .a .heros{
