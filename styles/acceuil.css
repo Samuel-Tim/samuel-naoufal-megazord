@@ -36,6 +36,16 @@
     left: 95%;
 }
 
+.a .logo{
+    position: absolute;
+    width: 10%;
+    top: 10%;
+}
+
+.a .navbar{
+    background-color: #c200b8;
+}
+
 .a .btn {
     position: absolute;
     top: 65%;
