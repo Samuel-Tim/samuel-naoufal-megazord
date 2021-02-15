@@ -63,7 +63,10 @@
     text-align: center;
   }
 
+
+
  .d .navbar{
+    position:relative;
     background-color:#c200b8; 
     }
 
