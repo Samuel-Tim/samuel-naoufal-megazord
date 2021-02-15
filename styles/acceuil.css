@@ -37,11 +37,12 @@
 }
 
 .a .logo{
-    position: absolute;
-    width: 10%;
-    top: 10%;
+    position:absolute;
+    top:10%;
+    width:20%;
+    height:75%;
+    left:41%;
 }
-
 .a .navbar{
     background-color: #c200b8;
 }
