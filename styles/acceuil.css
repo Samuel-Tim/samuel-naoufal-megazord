@@ -28,12 +28,11 @@
     height: 100%;
 }
 
-.a .txt{
-    position: relative;
-    color: black;
+.a .txt-btn{
+    position: absolute;
     font-weight: bold;
     font-family: 'Source Code Pro';
-    left: 95%;
+    justify-content: center;
 }
 
 .a .logo{
@@ -44,14 +43,13 @@
     left:41%;
 }
 .a .navbar{
+    position: relative;
     background-color: #c200b8;
 }
 
 
 .a .btn {
     position: absolute;
-    top: 65%;
-    left: 34%;
     display: block;
     width: 30%;
     border: none;
