@@ -63,14 +63,22 @@
     text-align: center;
   }
 
- .d .white{
-    background-color:white;
+ .d .blue{
+    background-color:blue;
     color: black; 
     }
 
 .d  a {
     color: black; 
     }
+
+.d .logo{
+    position:absolute;
+    top:10%;
+    width:20%;
+    height:75%;
+    left:41%;
+}
 
 @media (orientation: landscape ) {
    .d .hero{
