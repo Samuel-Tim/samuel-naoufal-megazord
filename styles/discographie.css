@@ -86,9 +86,10 @@
     height:20%;
     top:100%;
     background-color: #1887b4;
-    margin-top:20px;
-    padding-top:20px;
-    padding-bottom:20px;
+    padding:20px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 @media (orientation: landscape ) {
