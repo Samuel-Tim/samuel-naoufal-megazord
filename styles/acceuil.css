@@ -90,6 +90,9 @@
     padding-bottom: 20px;
 }
 
+.h:hover{
+     color: #ff6ef8;
+}
 .a .txtp{
     position: absolute;
     color: black;
