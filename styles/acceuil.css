@@ -30,6 +30,7 @@
 
 .a .txt-btn{
     position: absolute;
+    color: black;
     font-weight: bold;
     font-family: 'Source Code Pro';
     justify-content: center;
@@ -57,7 +58,6 @@
     padding: 14px 28px; 
     font-size: 12px;
     cursor: pointer;
-    text-align: center;
     color: black;
     font-weight: bold;
     font-family: 'Source Code Pro';
