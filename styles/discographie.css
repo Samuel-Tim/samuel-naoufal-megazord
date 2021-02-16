@@ -15,7 +15,7 @@
 }
 
 .d .row{
-    height:100%;
+    height:88%;
 }
 
 
@@ -92,6 +92,14 @@
     padding-bottom: 20px;
 }
 
+.d .txtp{
+    position:absolute;
+    color: black;
+    font-weight: bold;
+    font-family: 'Source Code Pro';
+    font-size: 12px;
+
+}
 
 
 @media (orientation: landscape ) {
