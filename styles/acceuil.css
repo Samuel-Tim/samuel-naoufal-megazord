@@ -33,7 +33,6 @@
     color: black;
     font-weight: bold;
     font-family: 'Source Code Pro';
-    justify-content: center;
 }
 
 .a .logo{
@@ -41,7 +40,8 @@
     top:10%;
     width:20%;
     height:75%;
-    left:41%;
+    justify-content: center;
+    left:40%;
 }
 .a .navbar{
     position: relative;
@@ -51,8 +51,8 @@
 
 .a .btn {
     position: absolute;
-    display: block;
     width: 30%;
+    left: 25%;
     border: none;
     background:#1887b4;
     padding: 14px 28px; 
