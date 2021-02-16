@@ -79,6 +79,16 @@
     left:41%;
 }
 
+
+.d .pied{
+    position:absolute;
+    width:100%;
+    height:20%;
+    top:100%;
+    background-color: #1887b4;
+    padding:20px;
+}
+
 @media (orientation: landscape ) {
    .d .hero{
         height: 56.25%;
