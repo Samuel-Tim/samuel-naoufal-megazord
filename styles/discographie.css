@@ -33,9 +33,9 @@
 
 
 .d .text{
-    position:relative;
-    top:20%;
-    left:47%;
+    position:absolute;
+    top:80%;
+    left:28%;
     color: black;
     font-weight: bold;
     font-family: 'Source Code Pro';
@@ -44,7 +44,7 @@
 
 .d .btn {
     position:absolute;
-    left:77%;
+    left:35%;
     top:90%;
     width: 30%;
     border: none;
