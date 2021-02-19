@@ -44,7 +44,7 @@
     left:40%;
 }
 .a .navbar{
-    position: relative;
+    position: sticky;
     background-color: #c200b8;
 }
 
@@ -81,13 +81,21 @@
 .a .pied{
     position:absolute;
     width:100%;
-    height:20%;
     top:100%;
     background-color: #1887b4;
     margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+
+.a .txtp{
+    color: black;
+    font-weight: bold;
+    font-family: 'Source Code Pro';
+    font-size: 12px;
+}
+
 
 .h:hover{
      color: #ff6ef8;
@@ -96,11 +104,4 @@
 .a .img-fluid{
     max-width: 100%;
     height: auto;
-}
-
-.a .txtp{
-    position: absolute;
-    color: black;
-    font-weight: bold;
-    font-family: 'Source Code Pro';
 }
