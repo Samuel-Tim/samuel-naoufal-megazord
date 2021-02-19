@@ -52,7 +52,7 @@
 .a .btn {
     position: absolute;
     width: 30%;
-    left: 25%;
+    justify-content: center;
     border: none;
     background:#1887b4;
     padding: 14px 28px; 
