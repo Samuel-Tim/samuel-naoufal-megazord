@@ -96,9 +96,15 @@
 }
 
 
+.d .img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+
 @media (orientation: landscape ) {
    .d .hero{
-        height: 56.25%;
+        height: 56.25vw;
         width: auto;
         margin: 0;
     }
