@@ -1,7 +1,6 @@
-.d .grp_music{
-    position:absolute;
-    width:100%;
-    height:100%;
+.d .hero{
+    position:relative;
+    height:100vh;
 }
 
 .d picture{
@@ -10,7 +9,8 @@
     height:100%;
 }
 
-.d .container{
+.d .hero .container{
+    position:relative;
     height:100%;
 }
 
@@ -33,9 +33,6 @@
 
 
 .d .text{
-    position:absolute;
-    top:80%;
-    left:28%;
     color: black;
     font-weight: bold;
     font-family: 'Source Code Pro';
@@ -43,9 +40,6 @@
 
 
 .d .btn {
-    position:absolute;
-    left:35%;
-    top:90%;
     width: 30%;
     border: none;
     background: linear-gradient(to left, red, blue);
@@ -59,7 +53,6 @@
 
 
  .d .navbar{
-    position:fixed;
     background-color:#c200b8; 
     }
 
@@ -74,9 +67,8 @@
 
 
 .d .pied{
-    position:absolute;
+    position:relative;
     width:100%;
-    top:100%;
     background-color: #1887b4;
     margin-top: 20px;
     padding-top: 20px;
@@ -107,6 +99,10 @@
     font-family: 'Lexend Mega';
 }
 
+
+.d .hero .row{
+    height:100%;
+}
 
 @media (orientation: landscape ) {
    .d .hero{
