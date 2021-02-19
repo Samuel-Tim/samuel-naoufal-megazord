@@ -59,7 +59,7 @@
 
 
  .d .navbar{
-    position:relative;
+    position:fixed;
     background-color:#c200b8; 
     }
 
@@ -99,6 +99,12 @@
 .d .img-fluid{
     max-width: 100%;
     height: auto;
+}
+
+
+.d .title{
+    font-size: 30px;
+    font-family: 'Lexend Mega';
 }
 
 
