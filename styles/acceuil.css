@@ -92,6 +92,12 @@
 .h:hover{
      color: #ff6ef8;
 }
+
+.a .img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
 .a .txtp{
     position: absolute;
     color: black;
