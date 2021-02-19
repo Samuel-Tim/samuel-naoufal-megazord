@@ -33,6 +33,7 @@
     color: black;
     font-weight: bold;
     font-family: 'Source Code Pro';
+    justify-content: center;
 }
 
 .a .logo{
@@ -40,7 +41,6 @@
     top:10%;
     width:20%;
     height:75%;
-    justify-content: center;
     left:40%;
 }
 .a .navbar{
@@ -65,7 +65,7 @@
 
 @media (orientation: landscape) {
     .a .heros{
-        height: 56.25%;
+        height: 56.25vw;
         margin: 0%;
     }
 }
