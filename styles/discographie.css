@@ -134,7 +134,6 @@
     text-align: center;
 }
 
-
 .d .split_1{
     width:100%;
     margin-top:20px;
@@ -157,3 +156,10 @@
         margin: 0;
     }
 }
+
+@media{min-width:576px} {
+    .d .section .albums{
+        padding: 40px;
+    }
+}
+    
