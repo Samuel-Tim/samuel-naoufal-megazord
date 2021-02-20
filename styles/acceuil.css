@@ -96,12 +96,53 @@
     font-size: 12px;
 }
 
+.a .card{
+    width: 500px;
+    height: auto;
+}
+
+.a .btn_card{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    border: none;
+    background:#ff6ef8;
+    padding: 14px 28px; 
+    font-size: 12px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    font-family: 'Source Code Pro';
+}
 
 .h:hover{
      color: #ff6ef8;
+}
+.a .c_img{
+    width:100%;
+    height: auto;
+}
+.a h1{
+    font-size: 35px;
+    font-family: 'Lexend Mega';
+    font-weight: bold;
+}
+.a h2{
+    font-size: 25px;
+    font-family: 'Lexend Mega';
+}
+
+.a h3{
+    font-size: 15px;
+    font-family: 'Lexend Mega';
 }
 
 .a .img-fluid{
     max-width: 100%;
     height: auto;
+}
+
+.a .card {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
