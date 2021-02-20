@@ -60,8 +60,8 @@
 .d .logo{
     position:absolute;
     top:10%;
-    width:20%;
-    height:75%;
+    width:auto;
+    height:50px;
     left:40%;
 }
 
@@ -95,6 +95,7 @@
 
 
 .d .title{
+    color: black;
     font-size: 30px;
     font-family: 'Lexend Mega';
 }
