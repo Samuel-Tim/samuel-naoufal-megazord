@@ -105,6 +105,39 @@
     height:100%;
 }
 
+.d .albums{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.d .h2{
+    font-size:'25px';
+    font-family:'Source Code Pro';
+}
+
+.d .section .text{
+    color:black;
+    font-size:'12px';
+    font-family:'Source Code Pro';
+    
+}
+
+.d .btn_album{
+    margin-top: 10px;
+    width:20%;
+    background-color: red;
+    border: none;
+    padding: 14px 28px; 
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.d .section .album1{
+    margin-top: 20px;
+}
+
 @media (orientation: landscape ) {
    .d .hero{
         height: 56.25vw;
