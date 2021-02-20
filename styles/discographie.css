@@ -105,6 +105,51 @@
     height:100%;
 }
 
+.d .albums{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.d .h2{
+    font-size:'25px';
+    font-family:'Source Code Pro';
+}
+
+.d .section .text{
+    color:black;
+    font-size:'12px';
+    font-family:'Source Code Pro';
+    
+}
+
+.d .btn_album{
+    margin-top: 10px;
+    width: 30%;
+    border: none;
+    background: linear-gradient(to left, red, blue);
+    padding: 14px 28px; 
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.d .split_1{
+    width:100%;
+    margin-top:20px;
+}
+
+.d .split_2{
+    margin-top: 20px;
+    width:100%;
+}
+
+.d .split_3{
+    margin-top: 20px;
+    width:100%;
+}
+
 @media (orientation: landscape ) {
    .d .hero{
         height: 56.25vw;
