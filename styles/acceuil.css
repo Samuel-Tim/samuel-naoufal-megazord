@@ -1,7 +1,7 @@
 .a .heros{
-    position:absolute;
+    position:relative;
     width:100%;
-    height:100%;
+    height:100vh;
 }
 
 .a .grp_music1{
@@ -29,22 +29,23 @@
 }
 
 .a .txt-btn{
-    position: absolute;
     color: black;
     font-weight: bold;
     font-family: 'Source Code Pro';
     justify-content: center;
 }
-
+.a .cbtn{
+    position: relative;
+}
 .a .logo{
-    position:absolute;
-    top:10%;
-    width:20%;
-    height:75%;
-    left:40%;
+    position: absolute;
+    width: auto;
+    height: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0%;
 }
 .a .navbar{
-    position: sticky;
     background-color: #c200b8;
 }
 
@@ -79,9 +80,8 @@
     height: 100%;
 }
 .a .pied{
-    position:absolute;
+    position:relative;
     width:100%;
-    top:100%;
     background-color: #1887b4;
     margin-top: 20px;
     padding-top: 20px;
