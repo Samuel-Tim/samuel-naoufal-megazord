@@ -149,6 +149,28 @@
     width:100%;
 }
 
+.d iframe{
+    position:absolute;
+    top:0%;
+    left:0%;
+    width:100%;
+    height:100%;
+}
+
+.d .youtube{
+    position:relative;
+    width:100%;
+    height:0%;
+    padding-bottom: 56.25%;
+}
+
+.d h1{
+    color:black;
+    font-size: '30px';
+    font-family: 'Lexend Mega';
+    
+}
+
 @media (orientation: landscape ) {
    .d .hero{
         height: 56.25vw;
