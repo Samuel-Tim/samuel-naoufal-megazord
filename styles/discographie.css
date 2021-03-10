@@ -82,6 +82,9 @@
     font-size: 12px;
 }
 
+.d .txtp:hover{
+    color:#ff6ef8;
+}
 
 .h:hover{
     color: #ff6ef8;
