@@ -12,19 +12,19 @@
 
 .d .slider_1{
     width:100%;
-    height:100%;
+    height:100vh;
     object-fit:contain;
 }
 
 .d .slider_2{
     width:100%;
-    height:100%;
+    height:100vh;
     object-fit:contain;
 }
 
 .d .slider_3{
     width:100%;
-    height:100%;
+    height:100vh;
     object-fit:contain;
 }
 
@@ -38,7 +38,7 @@
 
 .d .album1{
     width:100%;
-    height:100%;
+    height:100vh;
     object-fit:contain;
     background-color: #ff2b2b;
 }
@@ -211,7 +211,7 @@
     }
 }
 
-@media{min-width: 576px}{
+@media(min-width: 576px){
     .d .section .albums{
         padding: 40px;
     }
