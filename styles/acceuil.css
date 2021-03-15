@@ -208,10 +208,10 @@
 }
 
 .a .swiper-container .swiper-pagination-bullet{
-   background: white; 
+   background: #063970; 
    opacity: 1;
 }
 
 .a .swiper-container .swiper-pagination-bullet.bullet-active {
-    background: violet;
+    background: #c200b8;
 }
