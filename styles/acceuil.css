@@ -171,3 +171,22 @@
     font-family: 'Lexend Mega';
     
 }
+
+.swiper-slide{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; 
+}
+
+.a .swiper-slide img {
+    object-fit: fill;
+}
+
+.a .swiper-container .swiper-pagination-bullet{
+   background: white; 
+}
+
+.a .swiper-container .swiper-pagination-bullet.bullet-active {
+    background: violet;
+}
