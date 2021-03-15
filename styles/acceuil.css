@@ -158,13 +158,20 @@
     margin-right:auto;
 }
 
+.a iframe{
+    position:absolute;
+    top:0%;
+    left:0%;
+    width:100%;
+    height:100%;
+}
+
 .a .youtube{
     position:relative;
     width:100%;
     height:0%;
     padding-bottom: 56.25%;
 }
-
 .a h1{
     color:black;
     font-size: '30px';
@@ -178,13 +185,31 @@
     height: 0;
     padding-bottom: 56.25%; 
 }
+.a .promo1 {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+}
+.a .slider_1 {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+}
 
-.a .swiper-slide img {
-    object-fit: fill;
+.a .slider_2 {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+}
+.a .slider_3 {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
 }
 
 .a .swiper-container .swiper-pagination-bullet{
    background: white; 
+   opacity: 1;
 }
 
 .a .swiper-container .swiper-pagination-bullet.bullet-active {
