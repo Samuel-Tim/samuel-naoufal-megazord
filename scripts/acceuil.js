@@ -7,3 +7,6 @@ var swiper = new Swiper('.swiper-container', {
         bulletActiveClass: 'bullet-active',
         },
   });
+
+gsap.registerPlugin(ScrollTrigger);
+

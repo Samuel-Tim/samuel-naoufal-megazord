@@ -189,22 +189,26 @@
     position: absolute;
     object-fit: cover;
     width: 100%;
+    height: auto;
 }
 .a .slider_1 {
     position: absolute;
     object-fit: cover;
     width: 100%;
+    height: auto;
 }
 
 .a .slider_2 {
     position: absolute;
     object-fit: cover;
     width: 100%;
+    height: auto;
 }
 .a .slider_3 {
     position: absolute;
     object-fit: cover;
     width: 100%;
+    height: auto;
 }
 
 .a .swiper-container .swiper-pagination-bullet{
