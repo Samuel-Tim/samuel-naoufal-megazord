@@ -13,37 +13,25 @@ const swiper = new Swiper('.swiper-container', {
     });
 
 
-gsap.registerPlugin(ScrollTrigger);
+  const youtube = document.querySelector('.textytb')
+  const albums = document.querySelector('.albums')
 
-const sectionList =
+  youtube.ScrollTrigger(function() {
+    gsap.timeline( scrollTrigger: {
+      start: 'bottom bottom',
+      trigger: section,
+      .from('.textytb',{y: '100'})
+      .from('.youtube', {y:'100', opacity: '0', delay: '1'})
+       })
+    });
 
-document.querySelectorAll('section');
-
-sectionList.forEach(section => {
-  const albums = section.querySelector('albums');
-  const youtube = section.querySelector('youtube');
-  const text = section.querySelector('textytb');
-
-
-  gsap.timeline({
-    scrollTrigger: {
-      start:'bottom bottom',
-      trigger: banner,
-    }
+  albums.ScrollTrigger(function(){
+    gsap.timeline()
+    .from('.albums', {y: '100', opacity: '-5'})
+    .from('.btn_album', {y: '100', opacity: '-100', delay: '1'})
   })
-  .from(albums, {
-    y:100,
-    opacity:0
-  })
-  .from(youtube, {
-    opacity: 0
-  })
-  .from(textytb,{
-    y:50,
-    opacity:0
-  })
-});
 
 
+ 
 
 
