@@ -15,13 +15,14 @@ const swiper = new Swiper('.swiper-container', {
 
 gsap.registerPlugin(ScrollTrigger);
 
-const bannerList =
+const sectionList =
 
-document.querySelectorAll('banner');
+document.querySelectorAll('section');
 
-bannerList.forEach(banner => {
-  const albums = banner.querySelector('albums');
-  const youtube = banner.querySelector('youtube');
+sectionList.forEach(section => {
+  const albums = section.querySelector('albums');
+  const youtube = section.querySelector('youtube');
+  const text = section.querySelector('textytb');
 
 
   gsap.timeline({
@@ -36,6 +37,10 @@ bannerList.forEach(banner => {
   })
   .from(youtube, {
     opacity: 0
+  })
+  .from(textytb,{
+    y:50,
+    opacity:0
   })
 });
 
