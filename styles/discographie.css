@@ -1,3 +1,8 @@
+.d {
+    overflow-x: hidden;
+}
+
+
 .d .hero{
     position:relative;
     height:100vh;
@@ -113,10 +118,44 @@
 }
 
 
-.d .img-fluid{
-    max-width: 100%;
-    height: auto;
+.d .attente{
+    width: 400px;
+    height: 400px;
+    background-image: url(https://i.imgur.com/Qd2L6sC.png);
+    margin: 20px auto;
+    animation-name: attente;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(24);
+    position: sticky;
+    top:50%;
 }
+
+.d .haut {
+    width: 400px;
+    height: 400px;
+    background-image: url(https://i.imgur.com/vKmWanN.png); 
+    margin: 20px auto;
+    animation-name: haut;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(30);
+    position: sticky;
+    top:50%;
+  }
+
+  .d .bas {
+    width: 400px;
+    height: 400px;
+    background-image: url(https://i.imgur.com/58wnFp3.png);
+    margin: 20px auto;
+    animation-name: bas;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(30);
+    position: sticky;
+    top:50%;
+  }
 
 
 .d .title{
@@ -216,4 +255,19 @@
         padding: 40px;
     }
 }
-    
+
+
+@keyframes attente {
+    from { background-position: 0 100%; }
+    to { background-position: 0 -100%; }
+  }
+
+@keyframes haut {
+    from { background-position: 0 0; }
+    to { background-position: 0 100%; }
+  }
+
+@keyframes bas {
+    from { background-position: 0 0; }
+    to { background-position: 0 100%; }
+  }

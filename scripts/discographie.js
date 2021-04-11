@@ -45,7 +45,9 @@ const swiper = new Swiper('.swiper-container', {
     .from('.pied', {y:'100', opacity: '0',});
 
 
+    gsap.registerPlugin(ScrollTrigger);
 
+    
  
 
 
