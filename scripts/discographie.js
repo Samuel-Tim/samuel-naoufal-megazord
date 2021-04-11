@@ -47,7 +47,32 @@ const swiper = new Swiper('.swiper-container', {
 
     gsap.registerPlugin(ScrollTrigger);
 
-    
+    let timeout;
+    let body = document.body;
+    const animation = document.querySelector('.animation')
+
+    gsap.to('.animation', {
+    scrollTrigger: {
+    scrub: true,
+    trigger: '.animation',
+    onUpdate: (e) => {
+      body.classList.add('is-scrolling');
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        body.classList.remove('is-scrolling');
+      }, 100)
+      
+      if(e.direction == 1) {
+        body.classList.add('direction-down');
+        body.classList.remove('direction-up');
+      } 
+      if(e.direction == -1) {
+        body.classList.remove('direction-down');
+        body.classList.add('direction-up');
+      }
+    }
+  }
+})
  
 
 
