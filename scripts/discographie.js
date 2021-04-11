@@ -54,13 +54,13 @@ const swiper = new Swiper('.swiper-container', {
     gsap.to('.animation', {
     scrollTrigger: {
     scrub: true,
-    trigger: '.animation',
+    trigger: '.main',
     onUpdate: (e) => {
       body.classList.add('is-scrolling');
       clearTimeout(timeout);
       timeout = setTimeout(() => {
         body.classList.remove('is-scrolling');
-      }, 100)
+      }, 300)
       
       if(e.direction == 1) {
         body.classList.add('direction-down');
