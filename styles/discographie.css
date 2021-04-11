@@ -132,7 +132,7 @@
     animation-timing-function: steps(24);
 }
 
-.direction-up.is-scrolling .d .animation {
+.direction-up.is-scrolling.d .animation {
     background-image: url(https://i.imgur.com/vKmWanN.png); 
     animation-name: haut;
     animation-duration: 4s;
@@ -140,7 +140,7 @@
     animation-timing-function: steps(30);
   }
 
-  .direction-down.is-scrolling .d .animation {
+  .direction-down.is-scrolling.d .animation {
     background-image: url(https://i.imgur.com/58wnFp3.png);
     animation-name: bas;
     animation-duration: 3s;
