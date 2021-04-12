@@ -43,3 +43,31 @@ gsap.timeline({
         .from('.Images-promotionnelles', {opacity: '0'})
         .from('.swiper-container', {x: '100%'})
         .from('.swiper-pagination', {rotate:'90deg' , delay:'0.5'});
+        gsap.registerPlugin(ScrollTrigger);
+
+        let timeout;
+        let body = document.body;
+        const animation = document.querySelector('.animation')
+    
+        gsap.to('.animation', {
+        scrollTrigger: {
+        scrub: true,
+        trigger: '.main',
+        onUpdate: (e) => {
+          body.classList.add('is-scrolling');
+          clearTimeout(timeout);
+          timeout = setTimeout(() => {
+            body.classList.remove('is-scrolling');
+          }, 300)
+    
+          if(e.direction == 1) {
+            body.classList.add('direction-down');
+            body.classList.remove('direction-up');
+          } 
+          if(e.direction == -1) {
+            body.classList.remove('direction-down');
+            body.classList.add('direction-up');
+          }
+        }
+      }
+    })
