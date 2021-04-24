@@ -238,44 +238,20 @@
 .animation{
     opacity:0%;
   }
-  
-  .btn {
-    position: absolute;
-    width:10%;
-    bottom: 0px;
-    left: 46%;
-    background: linear-gradient(to left, red, blue);
-    padding: 12px;
-    color: white;
-    border-radius: 6px;
-    border: none;
-  }
-  
-  
-  
+
   .X{
     position:absolute;
-    width:25%;
-    left:35%;
-    top:40%;
+    width:23%;
+    left:40%;
+    top:-10%;
   }
   
   .william{
     position:absolute;
     width:70%;
-    left:13%;
-    top:30%;
+    left:17%;
+    top:-70%;
     z-index:1;
-  }
-  
-  .text{
-    position:absolute;
-    left:40%;
-    font-size:25px;
-    top:65%;
-    color:black;
-    text-transform:uppercase;
-    z-index:99;
   }
 
 .d .info{

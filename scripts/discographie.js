@@ -76,46 +76,7 @@ const swiper = new Swiper('.swiper-container', {
 
 //----------------------------------------------------------
 
-const btn = document.querySelector('.btn');
 
-btn.addEventListener('click', () => {
-  gsap.fromTo('.animation', 
-    { opacity: '0%' }, 
-    { opacity: '100%',
-    duration:1.4,
-    }        
-  );
-  
-gsap.fromTo('.animation', 
-    { opacity: '100%' }, 
-    { opacity: '0%',
-    delay:'2.5',
-    onComplete: () => console.log('Fini')
-    }
-  );
-
-gsap.to('.X', {
-    rotate: '360deg' ,
-    duration: 2,
-    delay:1,
-    ease: 'easing',
-  });
-});
-
-btn.addEventListener('click', () => {
-  gsap.fromTo('.text', 
-    { fontSize: '25px' }, 
-    { fontSize: '45px',}
-  );
-});
-
-btn.addEventListener('click', () => {
-  gsap.fromTo('.william', 
-    { y: '-10%' }, 
-    { y:'0%',
-    ease: 'bounce',}
-  );
-});
 
 
 //-------------------------------------------------
@@ -287,10 +248,12 @@ const questionList = [
             if (radio.value == this.questionList[this.index].r) {
               this.score++;
               console.log("Bonne réponse: pointage " + this.score);
+              this.goodAnswer();
             } else {
               this.score--;
               if(this.score == -1) { this.score = 0 }
               console.log("Mauvaise réponse: pointage " + this.score);
+              this.wrongAnswer();
             }
             if (this.index < this.questionList.length) {
               this.index++;
@@ -299,6 +262,52 @@ const questionList = [
           }
         });
       });
+    }
+    goodAnswer() {
+      
+    }
+
+    wrongAnswer() {
+      const animation = document.querySelector('.animation');
+
+animation.addEventListener('load', () => {
+  gsap.fromTo('.animation', 
+    { opacity: '0%' }, 
+    { opacity: '100%',
+    duration:1.4,
+    }        
+  );
+  
+gsap.fromTo('.animation', 
+    { opacity: '100%' }, 
+    { opacity: '0%',
+    delay:'2.5',
+    onComplete: () => console.log('Fini')
+    }
+  );
+
+gsap.to('.X', {
+    rotate: '360deg' ,
+    duration: 2,
+    delay:1,
+    ease: 'easing',
+  });
+});
+
+animation.addEventListener('load', () => {
+  gsap.fromTo('.text', 
+    { fontSize: '25px' }, 
+    { fontSize: '45px',}
+  );
+});
+
+animation.addEventListener('load', () => { 
+  gsap.fromTo('.william', 
+    { y: '-10%' }, 
+    { y:'0%',
+    ease: 'bounce',}
+  );
+});
     }
   }
   new Quiz(questionList);
