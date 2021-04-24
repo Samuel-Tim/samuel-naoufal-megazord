@@ -102,6 +102,21 @@ gsap.to('.X', {
   });
 });
 
+btn.addEventListener('click', () => {
+  gsap.fromTo('.text', 
+    { fontSize: '25px' }, 
+    { fontSize: '45px',}
+  );
+});
+
+btn.addEventListener('click', () => {
+  gsap.fromTo('.william', 
+    { y: '-10%' }, 
+    { y:'0%',
+    ease: 'bounce',}
+  );
+});
+
 
 //-------------------------------------------------
 

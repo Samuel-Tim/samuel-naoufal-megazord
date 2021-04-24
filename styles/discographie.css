@@ -255,23 +255,24 @@
   
   .X{
     position:absolute;
-    width:14%;
-    left:44%;
+    width:25%;
+    left:35%;
+    top:40%;
   }
   
   .william{
     position:absolute;
-    width:38%;
-    left:32%;
-    top:-25%;
+    width:70%;
+    left:13%;
+    top:30%;
     z-index:1;
   }
   
   .text{
     position:absolute;
-    left:47%;
+    left:40%;
     font-size:25px;
-    bottom:20%;
+    top:65%;
     color:black;
     text-transform:uppercase;
     z-index:99;
