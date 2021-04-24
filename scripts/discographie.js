@@ -202,7 +202,8 @@ const questionList = [
     creerHtml(q, value) {
       this.div = document.createElement("div");
       this.div.classList.add("question");
-      document.body.appendChild(this.div);
+      const modalbody= document.querySelector('#Quiz .modal-body');
+      modalbody.appendChild(this.div);
   
       this.strong = document.createElement("strong");
       this.strong.innerText = q.q;
