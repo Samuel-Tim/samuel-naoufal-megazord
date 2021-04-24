@@ -270,7 +270,7 @@ const questionList = [
     wrongAnswer() {
       const animation = document.querySelector('.animation');
 
-animation.addEventListener('load', () => {
+animation.addEventListener('click', () => {
   gsap.fromTo('.animation', 
     { opacity: '0%' }, 
     { opacity: '100%',
@@ -294,14 +294,14 @@ gsap.to('.X', {
   });
 });
 
-animation.addEventListener('load', () => {
+animation.addEventListener('click', () => {
   gsap.fromTo('.text', 
     { fontSize: '25px' }, 
     { fontSize: '45px',}
   );
 });
 
-animation.addEventListener('load', () => { 
+animation.addEventListener('click', () => { 
   gsap.fromTo('.william', 
     { y: '-10%' }, 
     { y:'0%',

@@ -238,7 +238,7 @@
 .animation{
     opacity:0%;
   }
-
+    
   .X{
     position:absolute;
     width:23%;
@@ -252,6 +252,16 @@
     left:17%;
     top:-70%;
     z-index:1;
+  }
+  
+  .text{
+    position:absolute;
+    left:43%;
+    font-size:25px;
+    top:65%;
+    color:black;
+    text-transform:uppercase;
+    z-index:99;
   }
 
 .d .info{
