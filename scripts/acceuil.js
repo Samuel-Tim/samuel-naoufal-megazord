@@ -255,7 +255,7 @@ gsap.timeline({
           });
         }
         goodAnswer() {
-          
+      
         }
     
         wrongAnswer() {

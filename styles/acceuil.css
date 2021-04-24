@@ -250,11 +250,20 @@
     animation-timing-function: steps(29);
 }
 
- .animation_quiz{
+.question {
+    margin-bottom: 30px;
+    display: none;
+  }
+  
+  .is-visible {
+    display: block;
+  }
+
+  .animation{
     opacity:0%;
   }
     
-   .X{
+  .X{
     position:absolute;
     width:23%;
     left:40%;
@@ -269,7 +278,7 @@
     z-index:1;
   }
   
-   .text{
+  .text{
     position:absolute;
     left:43%;
     font-size:25px;
@@ -277,15 +286,6 @@
     color:black;
     text-transform:uppercase;
     z-index:99;
-  }
-
-  .question {
-    margin-bottom: 30px;
-    display: none;
-  }
-  
-  .is-visible {
-    display: block;
   }
 
 @keyframes bas {
