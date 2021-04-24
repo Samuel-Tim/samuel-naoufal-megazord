@@ -72,26 +72,6 @@ gsap.timeline({
       }
     })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
     const questionList = [
   
       {   
@@ -174,7 +154,8 @@ gsap.timeline({
         creerHtml(q, value) {
           this.div = document.createElement("div");
           this.div.classList.add("question");
-          document.body.appendChild(this.div);
+          const modalbody= document.querySelector('#Quiz .modal-body');
+          modalbody.appendChild(this.div);
       
           this.strong = document.createElement("strong");
           this.strong.innerText = q.q;
@@ -258,10 +239,12 @@ gsap.timeline({
                 if (radio.value == this.questionList[this.index].r) {
                   this.score++;
                   console.log("Bonne réponse: pointage " + this.score);
+                  this.goodAnswer();
                 } else {
                   this.score--;
                   if(this.score == -1) { this.score = 0 }
                   console.log("Mauvaise réponse: pointage " + this.score);
+                  this.wrongAnswer();
                 }
                 if (this.index < this.questionList.length) {
                   this.index++;
@@ -270,6 +253,52 @@ gsap.timeline({
               }
             });
           });
+        }
+        goodAnswer() {
+          
+        }
+    
+        wrongAnswer() {
+          const animation = document.querySelector('.animation');
+    
+    
+      gsap.fromTo('.animation', 
+        { opacity: '0%' }, 
+        { opacity: '100%',
+        duration:1.4,
+        }        
+      );
+      
+    gsap.fromTo('.animation', 
+        { opacity: '100%' }, 
+        { opacity: '0%',
+        delay:'2.5',
+        onComplete: () => console.log('Fini')
+        }
+      );
+    
+    gsap.to('.X', {
+        rotate: '360deg' ,
+        duration: 2,
+        delay:1,
+        ease: 'easing',
+      });
+    
+    
+    
+      gsap.fromTo('.text', 
+        { fontSize: '25px' }, 
+        { fontSize: '45px',}
+      );
+    
+    
+    
+      gsap.fromTo('.william', 
+        { y: '-10%' }, 
+        { y:'0%',
+        ease: 'bounce',}
+      );
+    
         }
       }
       new Quiz(questionList);

@@ -74,12 +74,6 @@ const swiper = new Swiper('.swiper-container', {
   }
 })
 
-//----------------------------------------------------------
-
-
-
-
-//-------------------------------------------------
 
 const questionList = [
   
@@ -270,7 +264,7 @@ const questionList = [
     wrongAnswer() {
       const animation = document.querySelector('.animation');
 
-animation.addEventListener('click', () => {
+
   gsap.fromTo('.animation', 
     { opacity: '0%' }, 
     { opacity: '100%',
@@ -292,22 +286,22 @@ gsap.to('.X', {
     delay:1,
     ease: 'easing',
   });
-});
 
-animation.addEventListener('click', () => {
+
+
   gsap.fromTo('.text', 
     { fontSize: '25px' }, 
     { fontSize: '45px',}
   );
-});
 
-animation.addEventListener('click', () => { 
+
+
   gsap.fromTo('.william', 
     { y: '-10%' }, 
     { y:'0%',
     ease: 'bounce',}
   );
-});
+
     }
   }
   new Quiz(questionList);

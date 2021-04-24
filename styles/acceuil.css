@@ -250,6 +250,44 @@
     animation-timing-function: steps(29);
 }
 
+ .animation_quiz{
+    opacity:0%;
+  }
+    
+   .X{
+    position:absolute;
+    width:23%;
+    left:40%;
+    top:-45%;
+  }
+  
+  .william{
+    position:absolute;
+    width:70%;
+    left:17%;
+    top:-100%;
+    z-index:1;
+  }
+  
+   .text{
+    position:absolute;
+    left:43%;
+    font-size:25px;
+    top:65%;
+    color:black;
+    text-transform:uppercase;
+    z-index:99;
+  }
+
+  .question {
+    margin-bottom: 30px;
+    display: none;
+  }
+  
+  .is-visible {
+    display: block;
+  }
+
 @keyframes bas {
     from { background-position: 0 0%; }
     to { background-position: 0 100%; }
