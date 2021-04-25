@@ -255,21 +255,54 @@ gsap.timeline({
           });
         }
         goodAnswer() {
-      
+          const btn = document.querySelector('.btn')
+
+
+
+  gsap.fromTo('.anim', 
+    { opacity: '0%' }, 
+    { opacity: '100%', duration:1.4, }
+  );
+
+
+  gsap.fromTo('.anim', 
+    { opacity: '100%' }, 
+    { opacity: '0%', delay:2.5,onComplete: () => console.log('fini') }
+  );
+
+
+  gsap.fromTo('.V', 
+    { rotate: '0%' }, 
+    { rotate: '360', delay:0.75,}
+  );
+
+
+
+  gsap.fromTo('.txtv', 
+    { fontSize: '25px' }, 
+    { fontSize: '45px', x:'-15%'}
+  );
+
+
+
+  gsap.fromTo('.head', 
+    { y: '-10%' }, 
+    { y:'0%', ease: 'bounce'}
+  );
         }
     
         wrongAnswer() {
-          const animation = document.querySelector('.animation');
+          const animation = document.querySelector('.animation_quiz');
     
     
-      gsap.fromTo('.animation', 
+      gsap.fromTo('.animation_quiz', 
         { opacity: '0%' }, 
         { opacity: '100%',
         duration:1.4,
         }        
       );
       
-    gsap.fromTo('.animation', 
+    gsap.fromTo('.animation_quiz', 
         { opacity: '100%' }, 
         { opacity: '0%',
         delay:'2.5',

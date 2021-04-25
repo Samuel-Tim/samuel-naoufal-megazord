@@ -259,7 +259,7 @@
     display: block;
   }
 
-  .animation{
+  .animation_quiz{
     opacity:0%;
   }
     
@@ -285,6 +285,36 @@
     top:65%;
     color:black;
     text-transform:uppercase;
+    z-index:99;
+  }
+
+  .anim{
+    opacity:0%;
+  }
+
+  .V{
+    position:absolute;
+    width:15%;
+    top:2%;
+    left:42%;
+  }
+  
+  .head{
+    position:absolute;
+    width:15%;
+    top:0;
+    left:42%;
+    z-index:2;
+    opacity:95%;
+  }
+  
+  .txtv{
+    position:absolute;
+    font-size:25px;
+    text-transform:uppercase;
+    color:green;
+    left:45%;
+    bottom:20%;
     z-index:99;
   }
 
