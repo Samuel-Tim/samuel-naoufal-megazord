@@ -230,8 +230,8 @@ const questionList = [
     setVisible(number) {
       let divq = document.querySelectorAll(".question");
       divq.forEach((q) => {
-        q.classList.remove("is-visible");
-        divq[number].classList.add("is-visible");
+        q.classList.remove("visible");
+        divq[number].classList.add("visible");
       });
     }
     answers() {
@@ -249,9 +249,14 @@ const questionList = [
               console.log("Mauvaise réponse: pointage " + this.score);
               this.wrongAnswer();
             }
-            if (this.index < this.questionList.length) {
+            if (this.index <= this.questionList.length - 1) {
+              if (this.index == this.questionList.length -1) {
+                this.div.innerText = `${this.score}/8`;
+                this.div.insertAdjacentHTML('afterbegin', '<strong>Pointage</strong>') ;
+              return false;
+            }
               this.index++;
-              this.setVisible(this.index);
+              this.setVisible(this.index); 
             }
           }
         });
