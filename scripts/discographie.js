@@ -75,7 +75,9 @@ const swiper = new Swiper('.swiper-container', {
 })
 
 
-
+const questionList = fetch('https://bep-sam-naou.go.yj.fr/json/')
+.then(response => response.json())
+.then(data => {new Quiz(data.questionList)});
   
   class Quiz {
     constructor(tableau) {
@@ -277,4 +279,4 @@ gsap.to('.X', {
 
     }
   }
-  new Quiz(questionList);
+ 
