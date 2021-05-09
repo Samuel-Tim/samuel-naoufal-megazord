@@ -97,7 +97,7 @@ const questionList = fetch('https://bep-sam-naou.go.yj.fr/BEP-api/index.php/wp-j
       modalbody.appendChild(this.div);
   
       this.strong = document.createElement("strong");
-      this.strong.innerText = q.q;
+      this.strong.innerText = q.acf.q;
       this.div.appendChild(this.strong);
   
       this.br = document.createElement("br");
@@ -111,7 +111,7 @@ const questionList = fetch('https://bep-sam-naou.go.yj.fr/BEP-api/index.php/wp-j
         this.div.appendChild(radio);
   
         let label = document.createElement("label");
-        label.innerText = q.o1;
+        label.innerText = q.acf.o1;
         this.div.appendChild(label);
   
         this.br = document.createElement("br");
@@ -126,7 +126,7 @@ const questionList = fetch('https://bep-sam-naou.go.yj.fr/BEP-api/index.php/wp-j
         this.div.appendChild(radio);
   
         let label = document.createElement("label");
-        label.innerText = q.o2;
+        label.innerText = q.acf.o2;
         this.div.appendChild(label);
   
         this.br = document.createElement("br");
@@ -141,7 +141,7 @@ const questionList = fetch('https://bep-sam-naou.go.yj.fr/BEP-api/index.php/wp-j
         this.div.appendChild(radio);
   
         let label = document.createElement("label");
-        label.innerText = q.o3;
+        label.innerText = q.acf.o3;
         this.div.appendChild(label);
   
         this.br = document.createElement("br");
@@ -156,7 +156,7 @@ const questionList = fetch('https://bep-sam-naou.go.yj.fr/BEP-api/index.php/wp-j
         this.div.appendChild(radio);
   
         let label = document.createElement("label");
-        label.innerText = q.o4;
+        label.innerText = q.acf.o4;
         this.div.appendChild(label);
   
         this.br = document.createElement("br");
@@ -175,7 +175,7 @@ const questionList = fetch('https://bep-sam-naou.go.yj.fr/BEP-api/index.php/wp-j
       reponse.forEach((radio) => {
         radio.addEventListener("change", () => {
           if (radio.checked) {
-            if (radio.value == this.questionList[this.index].r) {
+            if (radio.value == this.questionList[this.index].acf.r) {
               this.score++;
               console.log("Bonne réponse: pointage " + this.score);
               this.goodAnswer();
