@@ -75,7 +75,7 @@ const swiper = new Swiper('.swiper-container', {
 })
 
 
-const questionList = fetch('https://bep-sam-naou.go.yj.fr/json/')
+const questionList = fetch('https://bep-sam-naou.go.yj.fr/BEP-api/index.php/wp-json/wp/v2/posts/')
 .then(response => response.json())
 .then(data => {new Quiz(data.questionList)});
   
