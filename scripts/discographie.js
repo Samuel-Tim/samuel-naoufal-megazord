@@ -77,7 +77,7 @@ const swiper = new Swiper('.swiper-container', {
 
 const questionList = fetch('https://bep-sam-naou.go.yj.fr/BEP-api/index.php/wp-json/wp/v2/posts/')
 .then(response => response.json())
-.then(data => {new Quiz(data.questionList)});
+.then(data => {new Quiz(data)});
   
   class Quiz {
     constructor(tableau) {
@@ -103,7 +103,7 @@ const questionList = fetch('https://bep-sam-naou.go.yj.fr/BEP-api/index.php/wp-j
       this.br = document.createElement("br");
       this.div.appendChild(this.br);
   
-      if ("o1" in q) {
+      if ("o1" in q.acf) {
         let radio = document.createElement("input");
         radio.setAttribute("type", "radio");
         radio.setAttribute("name", "question" + value);
@@ -118,7 +118,7 @@ const questionList = fetch('https://bep-sam-naou.go.yj.fr/BEP-api/index.php/wp-j
         this.div.appendChild(this.br);
       }
   
-      if ("o2" in q) {
+      if ("o2" in q.acf) {
         let radio = document.createElement("input");
         radio.setAttribute("type", "radio");
         radio.setAttribute("name", "question" + value);
@@ -133,7 +133,7 @@ const questionList = fetch('https://bep-sam-naou.go.yj.fr/BEP-api/index.php/wp-j
         this.div.appendChild(this.br);
       }
   
-      if ("o3" in q) {
+      if ("o3" in q.acf) {
         let radio = document.createElement("input");
         radio.setAttribute("type", "radio");
         radio.setAttribute("name", "question" + value);
@@ -148,7 +148,7 @@ const questionList = fetch('https://bep-sam-naou.go.yj.fr/BEP-api/index.php/wp-j
         this.div.appendChild(this.br);
       }
   
-      if ("o4" in q) {
+      if ("o4" in q.acf) {
         let radio = document.createElement("input");
         radio.setAttribute("type", "radio");
         radio.setAttribute("name", "question" + value);
