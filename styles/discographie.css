@@ -309,6 +309,10 @@
     z-index:99;
   }
 
+.d .modal-header{
+    background: linear-gradient(to left, red, blue);
+}
+
   
 
 @media (orientation: landscape ) {
