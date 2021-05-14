@@ -100,6 +100,9 @@
     font-size: 12px;
 }
 
+.a .modal-header{
+    background: linear-gradient(to left, red, blue);
+}
 .a .txtp:hover{
     color: #ff6ef8;
 }
