@@ -178,13 +178,13 @@ gsap.timeline({
                   console.log("Bonne réponse: pointage " + this.score);
                   this.goodAnswer();
                 } else {
-                  this.score--;
-                  if(this.score == -1) { this.score = 0 }
+                  this.score;
+                  if(this.score == 0) { this.score = 0 }
                   console.log("Mauvaise réponse: pointage " + this.score);
                   this.wrongAnswer();
                 }
-                if (this.index <= this.questionList.length - 1) {
-                  if (this.index == this.questionList.length -1) {
+                if (this.index <= this.questionList.length - 0) {
+                  if (this.index == this.questionList.length -0) {
                     this.div.innerText = `${this.score}/8`;
                     this.div.insertAdjacentHTML('afterbegin', '<strong>Pointage</strong>') ;
                   return false;
